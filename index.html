@@ -142,7 +142,10 @@ button{cursor:pointer;border:none;outline:none;font-family:inherit}
 </style>
 </head>
 <body>
+<audio id="bgmAudio" loop>
+  <source src="bgm.mp3" type="audio/mpeg">
 
+<button onclick="const audio=document.getElementById('bgmAudio');audio.paused?audio.play():audio.pause()">♪ 背景音乐开关</button>
 <canvas id="particleCanvas"></canvas>
 <canvas id="petalCanvas"></canvas>
 
